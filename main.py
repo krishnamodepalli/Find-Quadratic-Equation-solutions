@@ -1,5 +1,5 @@
-# Made with-in venv
-# Solving a quadrativ equation
+# Made with venv
+# Solving a quadrativ equation for student purpose
 
 print("Hey, I can help you with solving your Quadratic Equations.")
 print("Assuming the general Form of the a Quadratic Equation as Ax^2 + Bx +C = 0.")
@@ -9,7 +9,7 @@ B = int(input("Enter B : "))
 C = int(input("Enter C : "))
 
 type = [int, float]
-D = (B ** 2 - 4 * A * C)
+D = (B**2 - 4*A*C)
 det = 0
 D_str = str(D)
 D_int = int(D)
@@ -64,24 +64,20 @@ elif D > 0:
         if2 = int_or_float(beta)
         if if1 == 0:
             alpha = int(alpha)
-            pass
         elif if1 == 1:
             div1 = gcd(-B + int(det), 2*A)
             frac_num = (-B + int(det)) / div1
             frac_den = 2 * A / div1
             frac = str(int(frac_num)) + "/" + str(int(frac_den))
             alpha = frac
-            pass
         if if2 == 0:
             beta = int(beta)
-            pass
-        elif if1 == 1:
+        elif if2 == 1:
             div1 = gcd(-B - int(det), 2 * A)
             frac_num = (-B - int(det)) / div1
             frac_den = 2 * A / div1
             frac = str(int(frac_num)) + "/" + str(int(frac_den))
-            beta = frac
-            pass
+            beta = frac.strip('"\'')
         set1 = (alpha, beta)
         print(summary)
         print(set1)
