@@ -1,5 +1,5 @@
-# Made with venv
-# Solving a quadrativ equation for student purpose
+# Made with-in venv
+# Solving a quadrativ equation
 
 print("Hey, I can help you with solving your Quadratic Equations.")
 print("Assuming the general Form of the a Quadratic Equation as Ax^2 + Bx +C = 0.")
